@@ -1,0 +1,8 @@
+{
+    "apiBaseUrl": "https://api.example.com",
+    "appName": "Tatva Essence",
+    "logoDark": "/logoDark.png",
+    "themeYellow": "rgb(193, 145, 81)",
+    "themeWhite": "rgb(255, 255, 251)",
+    "lightYellow" : "#E2D5C3"
+}
