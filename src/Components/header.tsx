@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full bg-theme-yellow text-theme-white fixed top-0 left-0 right-0 z-50">
+    <header className="w-full bg-light-green text-theme-white fixed top-0 left-0 right-0 z-50">
       <div className="mx-none px-0 sm:px-2 lg:px-0 flex justify-between items-center h-20">
         <div className="flex pl-5">
         <div onClick={() => scrollTo("home")} className=" cursor-pointer">
@@ -55,40 +55,40 @@ const Header: React.FC = () => {
 
           <button
             onClick={() => scrollTo("section1")}
-            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-theme-yellow text-theme-white"
+            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
-            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-theme-white group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-theme-yellow">
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-light-green">
               About Us
             </span>
           </button>
 
           <button
             onClick={() => scrollTo("section2")}
-            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-theme-yellow text-theme-white"
+            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
-            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-theme-white group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-theme-yellow">
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-light-green">
               Testimonials
             </span>
           </button>
 
           <button
             onClick={() => scrollTo("section3")}
-            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-theme-yellow text-theme-white"
+            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
-            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-theme-white group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-theme-yellow">
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-light-green">
               Our Team
             </span>
           </button>
 
           <button
             onClick={() => scrollTo("contact")}
-            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-theme-yellow text-theme-white"
+            className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
-            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-theme-white group-hover:h-full opacity-90"></span>
-            <span className="relative group-hover:text-theme-yellow">
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-light-green">
               Contact Us
             </span>
           </button>
