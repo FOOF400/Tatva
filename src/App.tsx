@@ -13,14 +13,21 @@ const App: React.FC = () => {
             <img
               src="/dirtmound.jpeg"
               alt="Home Background"
-              className="w-full"
+              className="w-full absolute"
+              style={{ height: "calc(100vh / 2)", objectFit: "cover", objectPosition: ""}}
+            />
+             <img 
+              src="/moundForeground.png"
+              alt="Home Background"
+              className="w-full absolute z-10"
               style={{ height: "calc(100vh / 2)", objectFit: "cover", objectPosition: ""}}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>{" "}
             {/* Black overlay with 50% opacity */}
           </div>
-          <div className="relative flex items-center justify-center h-full text-white text-center">
-            <h1 className="text-5xl font-bold">Organically Yours</h1>
+          <div className="absolute inset-0 flex items-center justify-center h-fit text-white text-center"
+          style={{top: "2rem"}}>
+            <h1 className="font-bebas tracking-wide lg:text-9xl md:text-7xl sm:text-7xl text-7xl">Organically <br/> Yours.</h1>
           </div>
         </section>
         {/* Padding to push content below fixed navbar */}
