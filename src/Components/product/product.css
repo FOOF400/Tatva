@@ -173,3 +173,21 @@
     }
   }
   
+.blur-lg {
+  filter: blur(10px);
+}
+
+.blur-none {
+  filter: blur(0);
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.transition-filter {
+  transition: filter 3s, opacity 2s ease;
+}

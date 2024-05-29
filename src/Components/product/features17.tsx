@@ -22,7 +22,7 @@ interface Features17Props {
           </div>
           <div className="features17-content">
             <div className="features17-section-title">
-              <span className="thq-body-small">{props.feature1Slogan}</span>
+              <span className="thq-body-small text-gray-500">{props.feature1Slogan}</span>
               <div className="features17-content1">
                 <h2 className="thq-heading-2 font-bavro">{props.feature1Title}</h2>
                 <p className="thq-body-large">{props.feature1Description}</p>
@@ -37,11 +37,11 @@ interface Features17Props {
   }
   
   Features17.defaultProps = {
-    feature1Title: 'Nutrient-rich',
-    feature1Slogan: 'Grow Strong, Grow Healthy',
+    feature1Title: 'Empowering our sources',
+    feature1Slogan: 'One man\'s trash...',
     feature1ImageSrc: 'https://images.unsplash.com/photo-1654723011688-81cfe9039446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNjQ3NDY4M3w&ixlib=rb-4.0.3&q=80&w=1080',
     feature1ImageAlt: 'Sustainable Waste Management Image',
-    feature1Description: 'Packed with essential nutrients to provide a balanced diet for your plants, promoting robust growth and bountiful yields.',
+    feature1Description: 'We source unsold and mildly blemished produce from local mandis, compensating sellers with a fair and appropriate amount for every kilogram of produce collected. This not only supports the sellers but also helps in reducing waste.',
   };
   
   export default Features17;

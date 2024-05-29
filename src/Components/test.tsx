@@ -42,10 +42,10 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <div className="bg-hover-green py-12">
+    <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-8">Public Cheers for Us!</h2>
-        <p className="text-center text-gray-600 mb-12">Find out how our users are spreading the word!</p>
+        <h2 className="text-3xl font-coolvetica text-center text-gray-900 mb-8">But dont take our word for it</h2>
+        <p className="text-center text-gray-600 mb-12">Find out how our customers are spreading the word!</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {sampleTestimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md h-auto">

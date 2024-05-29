@@ -10,13 +10,14 @@ import ProductInfo from "./Components/product/product";
 import Testimonials from "./Components/test";
 // import index from "./index.json";
 import "./index.css";
+import Vision from "./Components/vision";
 
 const App: React.FC = () => {
   return (
-    <div className=" bg-hover-green">
+    <div className=" bg-slate-100">
       <Header />
 
-      <div className="pt-20 bg-hover-green">
+      <div className="pt-20 ">
         <section
           id="home"
           className="relative p-10 pt-20"
@@ -28,13 +29,14 @@ const App: React.FC = () => {
         {/* Padding to push content below fixed navbar */}
         <section id="aboutus" className="h-fit p-10 pt-20">
           <AboutUs/>
+          <Vision />
         </section>
 
-        <section id="section3" className="h-fit p-10 pt-20">
+        <section id="product" className="h-fit p-10 pt-32">
           <ProductInfo />
         </section>
 
-        <section id="section2" className="h-fit p-10 pt-20">
+        <section id="reviews" className="h-fit p-10 pt-20">
           <Testimonials />
         </section>
 
@@ -42,13 +44,13 @@ const App: React.FC = () => {
             Contact Us
           </section> */}
 
-        <section id="faq" className="h-fit p-10 pt-20">
+        <section id="faq" className="h-fit p-10">
         <div className="home-faq9">
           <FAQ />
         </div>
         </section>
 
-        <section id="contact" className="h-fit p-10 pt-20">
+        <section id="contact" className="h-fit bg-hover-green">
         <div className="home-contact10" id="contact">
           <Contact />
         </div>

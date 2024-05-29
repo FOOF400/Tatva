@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./product.css";
 
 import Features17 from "./features17";
@@ -7,7 +7,34 @@ import Features19 from "./features19";
 // import Features20 from "./features20";
 
 const ProductInfo: React.FC = () => {
-  
+  const productImageRef = useRef<HTMLImageElement>(null);
+  const [isBlurred, setIsBlurred] = useState(true);
+  const blurTimeoutRef = useRef <NodeJS.Timeout | null>(null);
+  const animationDelay = 200; // Adjust this value to change the wait time before the animation starts
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (productImageRef.current) {
+        const rect = productImageRef.current.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          // Image is in view
+          if (blurTimeoutRef.current) clearTimeout(blurTimeoutRef.current);
+          blurTimeoutRef.current = setTimeout(() => setIsBlurred(false), animationDelay);
+        } else {
+          // Image is out of view
+          if (blurTimeoutRef.current) clearTimeout(blurTimeoutRef.current);
+          setIsBlurred(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (blurTimeoutRef.current) clearTimeout(blurTimeoutRef.current);
+    };
+  }, []);
+
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -19,33 +46,13 @@ const ProductInfo: React.FC = () => {
   };
 
   return (
-    <>
-      {/* <div className="product-info-container">
-        <div className="product-info-content">
-          <div className="product-info-image">
-            <img src={imageSrc} alt={name} className=" w-1/4" />
-          </div>
-          <div className="product-info-details">
-            <h1>{name}</h1>
-            <p className="product-info-description">{description}</p>
-            <hr />
-            <div className="product-info-specs">
-              <p>
-                <strong>Nutrient Rich:</strong> {Nutrients}
-              </p>
-              <p>
-                <strong>Organic and Sustainable:</strong> {Organic}
-              </p>
-              <p>
-                <strong>Improved Soil Structure:</strong> {Soil}
-              </p>
-              <p>
-                <strong>Enhanced Microbial Activity:</strong> {Microbes}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+    <div className="bg-hover-green rounded-xl w-full">
+      <div className="w-full font-coolvetica pt-12 pb-5 lg:text-7xl md:text-7xl sm:text-5xl text-5xl text-center">
+        WHAT WE DO
+      </div>
+      <span className="w-full text-center block thq-body-small text-gray-500">
+        From local mandis to your garden, here's how we make it happen.
+      </span>
 
       <div className="home-features5">
         <Features17 />
@@ -59,12 +66,25 @@ const ProductInfo: React.FC = () => {
       {/* <div className="home-features6">
         <Features20 />
       </div> */}
-      <br/>
+      <br />
+      <h2 className="thq-heading-2 w-full flex justify-center items-center font-bavro">
+        And it boils down to this
+      </h2>
+
+      <div className="flex justify-center items-center">
+        <img
+          src="/product_img.png"
+          alt="product packaging"
+          className={`sm:w-1/2 md:w-1/5 lg:w-1/5 transition-filter duration-1000 ${isBlurred ? "opacity-100 blur-lg" : "opacity-100 blur-none"}`}
+          ref={productImageRef}
+        />
+      </div>
+
       <div className="thq-flex-column">
         <div className="faq1-content1">
           <h2 className="thq-heading-2">Sound Interesting?</h2>
           <p className="faq1-text3 thq-body-large">
-            Contact us directly using the infromation below to get our product!
+            Contact us directly using the information below to get our product!
           </p>
         </div>
         <div className="faq1-container">
@@ -74,9 +94,10 @@ const ProductInfo: React.FC = () => {
           >
             <span className="thq-body-small">Contact</span>
           </button>
-        </div>
+        </div>{" "}
+        <br />
       </div>
-    </>
+    </div>
   );
 };
 

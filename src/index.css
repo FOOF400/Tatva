@@ -10,6 +10,14 @@
 }
 
 @font-face {
+  font-family: 'Coolvetica';
+  src: url('../fonts/coolvetica/coolvetica\ rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'Allura';
   src: url('../fonts/Allura/Allura-Regular.ttf') format('truetype');
   font-weight: normal;

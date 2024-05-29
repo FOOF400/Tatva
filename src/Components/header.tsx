@@ -5,14 +5,6 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // const scrollTo = (id: string) => {
-  //   const section = document.getElementById(id);
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: "smooth", block: "start" });
-  //   }
-  //   setIsOpen(false); // Automatically close the dropdown after selection on mobile
-  // };
-
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -75,22 +67,22 @@ const Header: React.FC = () => {
           </button>
 
           <button
-            onClick={() => scrollTo("section2")}
+            onClick={() => scrollTo("product")}
             className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
             <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
             <span className="relative group-hover:text-light-green">
-              Testimonials
+              Our Product
             </span>
           </button>
 
           <button
-            onClick={() => scrollTo("section3")}
+            onClick={() => scrollTo("reviews")}
             className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
             <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
             <span className="relative group-hover:text-light-green">
-              Our Team
+              Reviews
             </span>
           </button>
 

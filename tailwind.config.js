@@ -22,6 +22,7 @@ export default {
         'bebas': ['Bebas Neue', 'sans-serif'],
         'allura': ['Allura', 'cursive'],
         'bavro': ['Bavro', 'sans-serif'],
+        'coolvetica': ['Coolvetica', 'sans-serif'],
       }
     },
   },
