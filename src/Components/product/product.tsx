@@ -6,10 +6,11 @@ import Features18 from "./features18";
 import Features19 from "./features19";
 // import Features20 from "./features20";
 
+
 const ProductInfo: React.FC = () => {
   const productImageRef = useRef<HTMLImageElement>(null);
   const [isBlurred, setIsBlurred] = useState(true);
-  const blurTimeoutRef = useRef <NodeJS.Timeout | null>(null);
+  const blurTimeoutRef = useRef<ReturnType<typeof setTimeout>| null>(null);
   const animationDelay = 200; // Adjust this value to change the wait time before the animation starts
 
   useEffect(() => {
