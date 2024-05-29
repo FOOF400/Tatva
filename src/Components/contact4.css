@@ -149,6 +149,7 @@
 }
 @media(max-width: 767px) {
   .contact4-row {
+    gap: 24px;
     flex-direction: column;
   }
 }

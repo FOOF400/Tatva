@@ -144,7 +144,7 @@ button:focus-visible {
   --dl-color-theme-neutral-dark: #191818;
   --dl-radius-radius-cardradius: 8px;
   --dl-color-theme-neutral-light: #FBFAF9;
-  --dl-radius-radius-imageradius: 24px;
+  --dl-radius-radius-imageradius: 10px;
   --dl-radius-radius-inputradius: 24px;
   --dl-radius-radius-buttonradius: 24px;
   --dl-space-space-oneandhalfunits: 24px;
@@ -277,6 +277,12 @@ button:focus-visible {
   line-height: 1.5;
 }
 .thq-heading-3 {
+  font-size: 35px;
+  /* font-family: Bavro; */
+  font-weight: 600;
+  line-height: 1.5;
+}
+.thq-heading-4 {
   font-size: 26px;
   /* font-family: Bavro; */
   font-weight: 600;
@@ -503,6 +509,22 @@ button:focus-visible {
   }
 }
 @media(max-width: 479px) {
+  .thq-heading-2 {
+    font-size: 26px;
+  }
+  .thq-heading-3 {
+    font-size: 20px;
+  }
+  .thq-body-large {
+    font-size: 14px;
+  }
+  .thq-body-small {
+    font-size: 12px;
+  }
+  .thq-icon-medium {
+    width: 36px;
+    height: 36px;
+  }
   .thq-section-padding {
     padding: var(--dl-space-space-oneandhalfunits);
   }

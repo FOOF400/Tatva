@@ -44,7 +44,7 @@ const App: React.FC = () => {
             Contact Us
           </section> */}
 
-        <section id="faq" className="h-fit p-10">
+        <section id="faq" className="h-fit py-10">
         <div className="home-faq9">
           <FAQ />
         </div>

@@ -68,7 +68,7 @@ const ProductInfo: React.FC = () => {
         <Features20 />
       </div> */}
       <br />
-      <h2 className="thq-heading-2 w-full flex justify-center items-center font-bavro">
+      <h2 className="thq-heading-2 w-full flex justify-center text-center items-center font-bavro text-5xl">
         And it boils down to this
       </h2>
 
@@ -84,7 +84,7 @@ const ProductInfo: React.FC = () => {
       <div className="thq-flex-column">
         <div className="faq1-content1">
           <h2 className="thq-heading-2">Sound Interesting?</h2>
-          <p className="faq1-text3 thq-body-large">
+          <p className="faq1-text3 w-full flex justify-center text-center items-center px-5">
             Contact us directly using the information below to get our product!
           </p>
         </div>
