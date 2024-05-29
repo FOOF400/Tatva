@@ -27,16 +27,16 @@ const App: React.FC = () => {
         </section>
 
         {/* Padding to push content below fixed navbar */}
-        <section id="aboutus" className="h-fit p-10 pt-20">
+        <section id="aboutus" className="h-fit p-10 pt-20 pb-20">
           <AboutUs/>
           <Vision />
         </section>
 
-        <section id="product" className="h-fit p-10 pt-32">
+        <section id="product" className="h-fit sm:px-5 md:px-10 lg:px-10 px-5 py-5 md:py-10 lg:py-10">
           <ProductInfo />
         </section>
 
-        <section id="reviews" className="h-fit p-10 pt-20">
+        <section id="reviews" className="h-fit">
           <Testimonials />
         </section>
 

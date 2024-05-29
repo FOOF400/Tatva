@@ -35,7 +35,7 @@ const Features18: React.FC<Features18Props> = (props) => {
 }
 
 Features18.defaultProps = {
-  feature1ImageSrc: 'https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNjQ3NDY5M3w&ixlib=rb-4.0.3&q=80&w=1080',
+  feature1ImageSrc: './img2.jpeg',
   feature1ImageAlt: 'Organically made',
   feature1Slogan: 'Turning waste into gold',
   feature1Title: 'Organic Magic',

@@ -40,12 +40,12 @@ const FAQ: React.FC<FAQProps> = (props) => {
             </p>
             <span className="thq-body-small">{props.faq2Answer}</span>
           </div>
-          <div className="faq1-list-item3">
+          {/* <div className="faq1-list-item3">
             <p className="faq1-faq3-question thq-body-large">
               {props.faq3Question}
             </p>
             <span className="thq-body-small">{props.faq3Answer}</span>
-          </div>
+          </div> */}
           {/* <div className="faq1-list-item4">
             <p className="faq1-faq4-question thq-body-large">
               {props.faq4Question}

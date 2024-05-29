@@ -9,20 +9,20 @@ const Header: React.FC = () => {
     const section = document.getElementById(id);
     if (section) {
       const yOffset = -80; // Adjust this value to the height of your navbar
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
     setIsOpen(false); // Automatically close the dropdown after selection on mobile
   };
-  
 
   return (
     <header className="w-full bg-light-green text-theme-white fixed top-0 left-0 right-0 z-50">
       <div className="mx-none px-0 sm:px-2 lg:px-0 flex justify-between items-center h-20">
         <div className="flex pl-5">
-        <div onClick={() => scrollTo("home")} className=" cursor-pointer">
-              <img src={index.logoDark} alt="logo" className="h-12 w-12 mr-3" />
-            </div>
+          <div onClick={() => scrollTo("home")} className=" cursor-pointer">
+            <img src={index.logoDark} alt="logo" className="h-12 w-12 mr-3" />
+          </div>
           <h1
             onClick={() => scrollTo("home")}
             className={`text-3xl font-bebas tracking-wide cursor-pointer mt-1 ${
@@ -31,15 +31,49 @@ const Header: React.FC = () => {
           >
             {index.appName}
           </h1>
-
-          
         </div>
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
             className="px-3 py-2 rounded text-white focus:outline-none focus:ring-2 focus:ring-white"
           >
-            {isOpen ? "▲" : "▼"}
+            {isOpen ? (
+              <svg
+                className="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 15 7-7 7 7"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            )}
           </button>
         </div>
 

@@ -17,7 +17,7 @@ interface Features17Props {
             <img
               alt={props.feature1ImageAlt}
               src={props.feature1ImageSrc}
-              className="thq-img-ratio-16-9"
+              className="thq-img-ratio-16-9 rounded-xl"
             />
           </div>
           <div className="features17-content">
@@ -39,7 +39,7 @@ interface Features17Props {
   Features17.defaultProps = {
     feature1Title: 'Empowering our sources',
     feature1Slogan: 'One man\'s trash...',
-    feature1ImageSrc: 'https://images.unsplash.com/photo-1654723011688-81cfe9039446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxNjQ3NDY4M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    feature1ImageSrc: 'https://images.unsplash.com/photo-1518843875459-f738682238a6?q=80&w=4442&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     feature1ImageAlt: 'Sustainable Waste Management Image',
     feature1Description: 'We source unsold and mildly blemished produce from local mandis, compensating sellers with a fair and appropriate amount for every kilogram of produce collected. This not only supports the sellers but also helps in reducing waste.',
   };
