@@ -9,9 +9,17 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Coolvetica';
   src: url('../fonts/coolvetica/coolvetica\ rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../fonts/coolvetica/CoolveticaRg-Regular 400.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
