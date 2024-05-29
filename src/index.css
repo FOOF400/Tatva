@@ -366,6 +366,7 @@ button:focus-visible {
   overflow: hidden;
   position: relative;
   align-items: center;
+  margin: 10px;
 }
 .thq-grid-6 {
   display: grid;
@@ -475,7 +476,8 @@ button:focus-visible {
 }
 @media(max-width: 991px) {
   .thq-flex-row {
-    flex-direction: column;
+    gap: 28px;
+    /* flex-direction: column; */
   }
   .thq-grid-4 {
     grid-template-columns: 1fr 1fr 1fr;
@@ -489,7 +491,7 @@ button:focus-visible {
     gap: var(--dl-space-space-oneandhalfunits);
   }
   .thq-flex-row {
-    gap: var(--dl-space-space-oneandhalfunits);
+    gap: 16px;
   }
   .thq-grid-6 {
     grid-gap: var(--dl-space-space-oneandhalfunits);
@@ -540,7 +542,7 @@ button:focus-visible {
     gap: var(--dl-space-space-unit);
   }
   .thq-flex-row {
-    gap: var(--dl-space-space-unit);
+    gap: 8px;
   }
   .thq-grid-6 {
     grid-gap: var(--dl-space-space-unit);
@@ -665,4 +667,3 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
 }
-

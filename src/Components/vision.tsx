@@ -39,7 +39,7 @@ const Vision: React.FC = () => {
         efforts, promoting a healthier planet for future generations. <br/><br/> Moreover,
         through transforming these marketplaces into an equitable hub for all, we
         strive to empower communities and provide fair wages and compensation to
-        all stakeholders
+        all stakeholders.
       </h1>
     </div>
   );
