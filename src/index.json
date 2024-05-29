@@ -1,8 +1,9 @@
 {
-    "apiBaseUrl": "https://api.example.com",
-    "appName": "Tatva Essence",
-    "logoDark": "/logoDark.png",
-    "themeYellow": "rgb(193, 145, 81)",
-    "themeWhite": "rgb(255, 255, 251)",
-    "lightYellow" : "#E2D5C3"
+  "apiBaseUrl": "https://api.example.com",
+  "appName": "Tatva Essence",
+  "logoDark": "/logoDark.png",
+  "themeYellow": "rgb(193, 145, 81)",
+  "themeWhite": "rgb(255, 255, 251)",
+  "lightYellow": "#E2D5C3",
+  "aboutus": "Welcome to Tatva Essence, a pioneering company dedicated to transforming discarded produce into high-quality organic aged compost. Based in North India, we partner with local vendors and large suppliers to convert potential waste into valuable resources. By leveraging advanced technology and sustainable practices, we aim to create a greener future while fostering economic resilience in our communities. With a focus on innovation and collaboration, Tatva Essence is redefining waste management and setting new standards for sustainability in the industry."
 }

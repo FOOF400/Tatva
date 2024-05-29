@@ -19,7 +19,9 @@ export default {
         'dark-brown'  : "rgb(101, 67, 33)",
       },
       fontFamily: {
-        'bebas': ['Bebas Neue', 'sans-serif']
+        'bebas': ['Bebas Neue', 'sans-serif'],
+        'allura': ['Allura', 'cursive'],
+        'bavro': ['Bavro', 'sans-serif'],
       }
     },
   },

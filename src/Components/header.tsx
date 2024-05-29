@@ -5,13 +5,24 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // const scrollTo = (id: string) => {
+  //   const section = document.getElementById(id);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth", block: "start" });
+  //   }
+  //   setIsOpen(false); // Automatically close the dropdown after selection on mobile
+  // };
+
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      const yOffset = -80; // Adjust this value to the height of your navbar
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
     setIsOpen(false); // Automatically close the dropdown after selection on mobile
   };
+  
 
   return (
     <header className="w-full bg-light-green text-theme-white fixed top-0 left-0 right-0 z-50">
@@ -54,7 +65,7 @@ const Header: React.FC = () => {
           </a> */}
 
           <button
-            onClick={() => scrollTo("section1")}
+            onClick={() => scrollTo("aboutus")}
             className="relative block w-full text-center md:w-auto px-4 py-7 group font-medium bg-light-green text-theme-white"
           >
             <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-hover-green group-hover:h-full opacity-90"></span>
