@@ -51,7 +51,7 @@ const ProductInfo: React.FC = () => {
       <div className="w-full font-coolvetica pt-12 pb-5 lg:text-7xl md:text-7xl sm:text-5xl text-5xl text-center">
         WHAT WE DO
       </div>
-      <span className="w-full text-center block thq-body-small text-gray-500">
+      <span className="w-full text-center block thq-body-small px-4 text-gray-500">
         From local mandis to your garden, here's how we make it happen.
       </span>
 
