@@ -4,24 +4,10 @@ import "./product.css";
 import Features17 from "./features17";
 import Features18 from "./features18";
 import Features19 from "./features19";
-import Features20 from "./features20";
+// import Features20 from "./features20";
 
 const ProductInfo: React.FC = () => {
-  const name = "Organic Aged Compost";
-
-  const description =
-    "Vintage rectangular glasses in Alan Mickley's signature textured acetate. Model from the 1986 collection, as evidenced by the marking on the bracket.";
-
-  const Nutrients =
-    "Packed with essential nutrients to provide a balanced diet for your plants, promoting robust growth and bountiful yields.";
-  const Organic =
-    "Made from high-quality produce waste, our compost supports sustainable practices and ensures your garden is free from harmful chemicals and synthetic additives.";
-  const Soil =
-    "Regular use of Tatva Essence enhances soil structure, promoting better root development and increased aeration.";
-  const Microbes =
-    "Our compost boosts the presence of beneficial microbes in the soil, which aids in the natural breakdown of organic matter and nutrient cycling.";
-  const imageSrc = "/product_img.png";
-
+  
   const scrollTo = (id: string) => {
     const section = document.getElementById(id);
     if (section) {

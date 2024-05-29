@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./Components/header";
 import AboutUs from "./Components/about";
-import Footer from "./Components/footer";
+// import Footer from "./Components/footer";
 import Tagline from "./Components/tagline";
 import Contact from "./Components/contact";
 import FAQ from "./Components/faq";
 import ProductInfo from "./Components/product/product";
 // import Testimonials from "./Components/testimonials";
 import Testimonials from "./Components/test";
-import index from "./index.json";
+// import index from "./index.json";
 import "./index.css";
 
 const App: React.FC = () => {
