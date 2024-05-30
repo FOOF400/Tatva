@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    customPaging: (i: number) => (
+    customPaging: () => (
         <button>{/* Custom button content */}</button>
       ),
     responsive: [
