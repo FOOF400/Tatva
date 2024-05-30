@@ -54,7 +54,7 @@ const ProductInfo: React.FC = () => {
         WHAT WE DO
       </div>
       <span className="w-full text-center block thq-body-small px-4 text-gray-500">
-        From local mandis to your garden, here's how we make it happen.
+       From  <i>local mandis</i> to your garden, here's how we make it happen.
       </span>
 
       <div className="home-features5">

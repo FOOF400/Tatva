@@ -1,56 +1,109 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './testimonials.css';
 
 const Testimonials: React.FC = () => {
-  const sampleTestimonials = [
-    {
-      name: 'Hikmet Atçeken',
-      username: 'hiatceken',
-      content: "Pulsefy's our daily tool to bypass averages and reveal true insights, for the whole team!",
-      image: 'path/to/hikmet.jpg',
-    },
-    {
-      name: 'Arda Guler',
-      username: 'ardaguler_',
-      content: "Pulsefy levels the analytics field for our team, enabling both beginners and pros to easily bypass averages and uncover the actionable insights that truly shape our marketing strategies.",
-      image: 'path/to/arda.jpg',
-    },
-    {
-      name: 'Maria Ancelotti',
-      username: 'maria_ancelotti',
-      content: "From novice to pro, Pulsefy helps our team uncover the extraordinary in our marketing data!",
-      image: 'path/to/maria.jpg',
-    },
-    {
-      name: 'Ragip Diler',
-      username: 'rgdiler',
-      content: "Pulsefy empowers our whole team, techies or not, to dive into marketing analytics and spot the insights that really matter—no more average data!",
-      image: 'path/to/ragip.jpg',
-    },
-    {
-      name: 'Jenny Wilson',
-      username: 'wilson_jenny_19',
-      content: "Pulsefy's user-friendly analytics let our whole team, regardless of skill, bypass averages to unearth and act on true, game-changing marketing insights every day.",
-      image: 'path/to/jenny.jpg',
-    },
-    {
-      name: 'Guy Hawkins',
-      username: 'ghawkins',
-      content: "Pulsefy is a game-changer for our team—easy for beginners and powerful for digging beyond average data. It’s our daily ally in unearthing those pivotal marketing insights that really drive strategy! Pulsefy is a game-changer for our team—easy for beginners and powerful for digging beyond average data. It’s our daily ally in unearthing those pivotal marketing insights that really drive strategy!Pulsefy is a game-changer for our team—easy for beginners and powerful for digging beyond average data. It’s our daily ally in unearthing those pivotal marketing insights that really drive strategy!",
-      image: 'path/to/guy.jpg',
-    },
-  ];
+    const sampleTestimonials = [
+        {
+          name: 'Ravi Sharma',
+          username: 'ravi_sharma',
+          content: "Tatva Essence's Organic Aged Compost has completely transformed my garden. My plants are healthier and more vibrant than ever!",
+          image: './img1.jpeg',
+        },
+        {
+          name: 'Anita Verma',
+          username: 'anita_verma',
+          content: "I've been using Tatva Essence's compost for a few months now, and I can see a significant improvement in the quality of my soil.",
+          image: './img2.jpeg',
+        },
+        {
+          name: 'Vikram Singh',
+          username: 'vikram_singh',
+          content: "This compost is truly a game-changer! It's easy to use and has helped me grow the most beautiful flowers.",
+          image: './img3.jpeg',
+        },
+        {
+          name: 'Priya Kapoor',
+          username: 'priya_kapoor',
+          content: "I love Tatva Essence's compost because it's organic and eco-friendly. My vegetables have never tasted better.",
+          image: './dirtmound.jpeg',
+        },
+        {
+          name: 'Amit Joshi',
+          username: 'amit_joshi',
+          content: "Tatva Essence's compost has improved the texture and fertility of my garden soil. I highly recommend it!",
+          image: './logoDark.png',
+        },
+        {
+          name: 'Meera Gupta',
+          username: 'meera_gupta',
+          content: "I was skeptical at first, but after using Tatva Essence's compost, my garden is thriving. I'm so happy with the results.",
+          image: './vite.svg',
+        },
+        {
+          name: 'Karan Malhotra',
+          username: 'karan_malhotra',
+          content: "The quality of Tatva Essence's compost is unmatched. My garden has never looked so green and lush.",
+          image: './instagram.png',
+        },
+        {
+          name: 'Sonia Patel',
+          username: 'sonia_patel',
+          content: "Tatva Essence's Organic Aged Compost is fantastic! It's made my gardening experience so much more rewarding.",
+          image: './linkedin.png',
+        },
+      ];
+            
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    customPaging: (i: number) => (
+        <button>{/* Custom button content */}</button>
+      ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-coolvetica text-center text-gray-900 mb-8">But dont take our word for it</h2>
-        <p className="text-center text-gray-600 mb-12">Find out how our customers are spreading the word!</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto px-12 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-coolvetica text-center text-gray-900 mb-8">
+          But don't take our word for it
+        </h2>
+        <p className="text-center text-gray-600 mb-12">
+          Find out how our customers are spreading the word!
+        </p>
+        <Slider {...settings}>
           {sampleTestimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md h-auto">
+            <div key={index} className="testimonial-card">
               <div className="flex items-center space-x-4 mb-4">
-                <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full" />
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="testimonial-image"
+                />
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">{testimonial.name}</h3>
                   <p className="text-gray-600">@{testimonial.username}</p>
@@ -59,7 +112,7 @@ const Testimonials: React.FC = () => {
               <p className="text-gray-800">{testimonial.content}</p>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </div>
   );

@@ -1,3 +1,7 @@
+/* testimonials.css */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
 .logos1-container {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
@@ -77,3 +81,70 @@
   margin-top: 0.5rem;
   color: #4a5568;
 }
+
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.595);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px; /* Add margin here */
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+
+.testimonial-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+}
+
+.slick-slide {
+  padding: 1.5rem 0.5rem; /* Add padding here */
+  transform: scale(0.8);
+  opacity: 0.7;
+  transition: transform 1s ease, opacity 1s ease;
+
+}
+
+.slick-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Ensure the container has no padding so the cards align correctly */
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Custom styles for the dots */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: transparent;
+  text-align: center;
+  content: "";
+}
+
+.slick-dots li button:after {
+  content: '—';
+  font-style: oblique;
+  font-family: "coolvetica";
+  font-size: 30px;
+  color: rgba(128, 128, 128, 0.549);
+  text-align: center;
+}
+
+.slick-dots li.slick-active button:after {
+  color: black;
+}
+
+
+
