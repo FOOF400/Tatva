@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 
-
 const AboutUs: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row md:flex-row">
@@ -28,21 +27,13 @@ const AboutUs: React.FC = () => {
         communities. With a focus on innovation and collaboration, Tatva Essence
         is redefining waste management and setting new standards for
         sustainability in the industry.
-        <br /><br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        vestibulum lectus lectus, at dignissim orci consequat a. Proin eget
-        pellentesque erat, vitae vestibulum diam. Pellentesque tincidunt nibh
-        ipsum, eget blandit libero tempor lobortis. Etiam ultrices viverra nisl,
-        sodales tempus lectus imperdiet ac. Morbi hendrerit facilisis diam quis
-        ultricies. Pellentesque eu nunc ac ante posuere posuere eu vitae tellus.
-        Maecenas pellentesque justo vel tellus condimentum, vitae sodales enim
-        congue. Etiam vestibulum sollicitudin augue quis mattis. Quisque
-        tincidunt mi a ante ultrices efficitur. Fusce ut eleifend tortor.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Nulla ante ante, pretium maximus pellentesque sed,
-        imperdiet sit amet purus. Maecenas sit amet ligula eu turpis ullamcorper
-        imperdiet. Nulla dictum velit ac cursus cursus. Ut in eros sit amet
-        mauris volutpat euismod.
+        <br />
+        <br />
+        At Tatva Essence, our journey began with a simple yet profound
+        realization. Driven by a shared passion for sustainability, we
+        discovered heaps of wasted produce in local mandis. This blatant
+        disregard for resources ignited a spark within us, compelling us to take
+        action.
       </h1>
     </div>
   );

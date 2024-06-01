@@ -17,7 +17,7 @@ const Features18: React.FC<Features18Props> = (props) => {
           <div className="features18-section-title">
             <span className="thq-body-small text-gray-500">{props.feature1Slogan}</span>
             <div className="features18-content1">
-              <h2 className="thq-heading-2 font-bavro">{props.feature1Title}</h2>
+              <h2 className="thq-heading-2 tracking-tighter">{props.feature1Title}</h2>
               <p className="thq-body-large">{props.feature1Description}</p>
             </div>
           </div>

@@ -70,7 +70,7 @@ const ProductInfo: React.FC = () => {
         <Features20 />
       </div> */}
       <br />
-      <h2 className="thq-heading-2 w-full flex justify-center text-center items-center font-bavro text-5xl">
+      <h2 className="thq-heading-2 w-full flex justify-center text-center items-center tracking-tighter text-5xl">
         And it boils down to this
       </h2>
 
