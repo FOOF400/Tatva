@@ -1,0 +1,335 @@
+
+.review-page {
+    height: 100vh;
+  }
+  .topSection{
+    background-image: url('/backgroundTatva.webp');
+    width: 100vw;
+    height: 80vh;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3vw;
+    
+  }
+  .review-part{
+    display: flex;
+    border-radius: 10px;
+    height: 80vh;
+  }
+
+  .story-section {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    height: auto;
+  }
+
+  .bg-blur {
+    position: absolute;
+    top: 0;
+    width: 96%;
+    height: 100%;
+    background-image: url('/backgroundTatva.webp'); 
+    background-position: 100% 10%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: 1;
+;
+  }
+  .content {
+    z-index: 2; /* Ensure the text is above the blurred background */
+    color: white;
+    line-height: 1.6;
+    font-size: 26px;
+    text-align: justify;
+    
+    
+  }
+
+  
+  .story-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .story-section p {
+    color: #E1D5CB;
+    line-height: 1.6;
+    font-size: 26px;
+    text-align: justify;;
+    
+  }
+  
+  .interaction-section {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+  .left{
+    width: 60vw;
+  }
+  .row{
+    display: flex;
+  }
+  .right{
+    width: 30vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    border-radius: 10px;
+    background-color: #5A6A4D;
+    height: 60vh;
+    margin-top: 2vh;
+
+  }
+  .social-media{
+    margin-top: 1vw;
+  }
+  .btn1{
+    margin-right: 0.5vw;
+  }
+  .title{
+    border: 3px solid white;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #5A6A4D;
+  }
+  
+  .btn-review {
+    display: block;
+    width: 10lvw;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #5A6A4D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .btn-review:hover {
+    background-color: black;
+    color: white;
+    
+  }
+  
+  .review-form {
+    padding: 20px;
+    border-radius: 10px;
+
+  }
+  .review-form h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+  
+  .review-form div {
+    margin-bottom: 10px;
+  }
+  
+  .review-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a4a4a;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  
+  .review-form textarea {
+    height: 20vh;
+    resize: none;
+  }
+  
+  .review-form .btn {
+    margin-top: 20px;
+  }
+
+  .review-card-section{
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  .done{
+    color: black;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 23.4375rem) {
+
+    .review-page {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Ensure the page doesn't exceed screen width */
+      overflow-x: hidden;
+    }
+  
+    .topSection {
+      height: 70vh;
+      width: 100%; /* Change from 100vw to 100% to avoid overflow */
+      padding-right: 1rem;
+      background-position: center;
+    }
+  
+    .story-section {
+      width: 100%; /* Use 100% for width */
+      padding: 1rem;
+    }
+  
+    .story-section p {
+      font-size: 4vw;
+      line-height: 1.5;
+    }
+  
+    .interaction-section {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .left {
+      width: 100%;
+    }
+  
+    .right {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .review-card-section {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  
+    .btn-review {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+  
+    .review-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .review-form input,
+    .review-form textarea {
+      font-size: 1rem;
+    }
+  
+    .social-media .row {
+      flex-direction: row;
+    }
+  
+    .btn1 {
+      margin-right: 0.5rem;
+    }
+  
+    .review-form textarea {
+      height: 15vh;
+    }
+    .contact-us-review {
+        margin-top: 35vh; 
+    }
+}
+
+@media (min-width: 24rem) and (max-width: 48rem) {
+
+    .review-page {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Ensure the page doesn't exceed screen width */
+      overflow-x: hidden;
+    }
+  
+    .topSection {
+      height: 70vh;
+      width: 100%; /* Change from 100vw to 100% to avoid overflow */
+      padding-right: 1rem;
+      background-position: center;
+    }
+  
+    .story-section {
+      width: 100%; /* Use 100% for width */
+      padding: 1rem;
+    }
+  
+    .story-section p {
+      font-size: 4vw;
+      line-height: 1.5;
+    }
+  
+    .interaction-section {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .left {
+      width: 100%;
+    }
+  
+    .right {
+      width: 100%;
+      padding: 1rem;
+      margin-top: -2vh;
+    }
+  
+    .review-card-section {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  
+    .btn-review {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+  
+    .review-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .review-form input,
+    .review-form textarea {
+      font-size: 1rem;
+    }
+  
+    .social-media .row {
+      flex-direction: row;
+    }
+  
+    .btn1 {
+      margin-right: 0.5rem;
+    }
+  
+    .review-form textarea {
+      height: 15vh;
+    }
+    .contact-us-review {
+      margin-top: 10vh;
+    }
+  
+  }
+
+ 
