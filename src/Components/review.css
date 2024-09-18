@@ -328,4 +328,78 @@
   
   }
 
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .review-page {
+      display: flex;
+      flex-direction: column;
+      width: 100%; 
+      overflow-x: hidden;
+    }
+  
+    .topSection {
+      height: 80vh;
+      width: 100vw; /* Ensure it takes the full window width */
+      padding-right: 1.5rem; /* Slightly more padding for desktop */
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .story-section {
+      width: 50%; /* Use half width for story section on larger screens */
+      padding: 2rem;
+      font-size: 1.2rem; /* Larger font for readability */
+    }
+    .content{
+      font-size: 18px;
+    }
+  
+    .interaction-section {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+  
+    .left {
+      width: 65vw; /* Make left section wider for larger screens */
+    }
+  
+    .right {
+      width: 30vw; /* Keep the right section fixed */
+      padding: 2rem;
+      margin-top: 0; /* No margin-top for desktop */
+    }
+  
+    .review-card-section {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  
+    .btn-review {
+      width: auto;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  
+    .review-form h1 {
+      font-size: 2rem;
+    }
+  
+    .review-form input,
+    .review-form textarea {
+      font-size: 1.2rem;
+    }
+  
+    .review-form textarea {
+      height: 20vh;
+    }
+  
+    .social-media .row {
+      flex-direction: row;
+    }
+  
+    .contact-us-review {
+      margin-top: 5vh; 
+    }
+  }
+
  
