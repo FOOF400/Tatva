@@ -3,6 +3,7 @@ import './review.css';
 import Contact from "../Components/contact";
 import instagram from "/instagram.png";
 import whatsapp from "/whatsapp.png";
+import feedback_completed from '../../public/feedback_completed.jpeg';
 
 const ReviewPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -52,6 +53,11 @@ const ReviewPage: React.FC = () => {
       setIsLoading(false); 
     }
   };
+
+  const openWhatsApp = () => {
+    const inviteLink = 'https://chat.whatsapp.com/E1MNVRiTjbdCvs6dspn0u0'; // Your group invite link
+    window.open(inviteLink, '_blank');
+};
 
   return (
     <div className="review-page">
@@ -124,6 +130,10 @@ const ReviewPage: React.FC = () => {
             ) : (
               <div className="done-div">
               <p className="font-bebas done">Thank you for submitting your review!</p>
+              <img src={feedback_completed} alt="feedback completed Image" className="feedback-image"/>
+              <div className="whatsapp-div">
+              <button className="whatsapp-community" onClick={openWhatsApp}>Join our Community</button>
+              </div>
               </div>
             )}
             {error && <p className="error-message">{error}</p>}
