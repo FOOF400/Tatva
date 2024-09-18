@@ -25,44 +25,38 @@
     display: flex;
     position: relative;
     height: auto;
+    
   }
 
   .bg-blur {
     position: absolute;
     top: 0;
     width: 96%;
-    height: 100%;
+    height: 97%;
     background-image: url('/backgroundTatva.webp'); 
     background-position: 100% 10%;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     z-index: 1;
 ;
   }
   .content {
-    z-index: 2; /* Ensure the text is above the blurred background */
+    z-index: 2;
     color: white;
-    line-height: 1.6;
-    font-size: 26px;
+    font-size: 23px;
     text-align: justify;
-    
-    
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
   }
 
-  
+
   .story-section h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 16px;
   }
-  
-  .story-section p {
-    color: #E1D5CB;
-    line-height: 1.6;
-    font-size: 26px;
-    text-align: justify;;
-    
-  }
+
   
   .interaction-section {
     width: 100vw;
@@ -120,7 +114,6 @@
     color: white;
     
   }
-  
   .review-form {
     padding: 20px;
     border-radius: 10px;
@@ -148,7 +141,9 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 18px;
+    font-family: sans-serif;
   }
+  
   
   .review-form textarea {
     height: 20vh;
@@ -188,7 +183,7 @@
     }
   
     .topSection {
-      height: 70vh;
+      height: 80vh;
       width: 100%; /* Change from 100vw to 100% to avoid overflow */
       padding-right: 1rem;
       background-position: center;
@@ -197,6 +192,7 @@
     .story-section {
       width: 100%; /* Use 100% for width */
       padding: 1rem;
+      height: auto;
     }
   
     .story-section p {
@@ -264,7 +260,7 @@
     }
   
     .topSection {
-      height: 70vh;
+      height: 80vh;
       width: 100%; /* Change from 100vw to 100% to avoid overflow */
       padding-right: 1rem;
       background-position: center;

@@ -59,7 +59,7 @@ const ReviewPage: React.FC = () => {
       <div className="story-section">
   <div className="bg-blur"></div>
   <div className="content">
-    <p className="font-bebas">
+    <p>
       Welcome to Tatva Essence, a pioneering company dedicated to transforming discarded produce into high-quality organic aged compost.
       <br /><br />
       Based in Delhi NCR, we partner with local vendors and large suppliers to convert potential waste into valuable resources. By leveraging advanced technology and sustainable practices, we aim to create a greener future while fostering economic resilience in our communities. With a focus on innovation and collaboration, Tatva Essence is redefining waste management and setting new standards for sustainability in the industry.
@@ -91,7 +91,7 @@ const ReviewPage: React.FC = () => {
                   <input
                     type="text"
                     name="email"
-                    placeholder="EMAIL"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isLoading}
@@ -110,7 +110,7 @@ const ReviewPage: React.FC = () => {
                 <div>
                   <textarea
                     name="review"
-                    placeholder="review"
+                    placeholder="Review"
                     required
                     value={formData.review}
                     onChange={handleChange}
