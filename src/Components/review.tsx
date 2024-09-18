@@ -6,7 +6,7 @@ import whatsapp from "/whatsapp.png";
 
 const ReviewPage: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    Name: "",
     email: "",
     phoneNumber: "",
     review: ""
