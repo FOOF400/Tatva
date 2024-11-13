@@ -38,10 +38,11 @@
     background-color: #a89984; /* Light brown card color */
     border-radius: 15px;
     padding: 20px;
-    width: 80%;
-    max-width: 300px;
-    text-align: center;
+    width: 30vw;
+    text-align: justify;
     color: white;
+    letter-spacing: 0;
+    word-spacing: 0;
   }
   
   .info-card h2 {
@@ -54,8 +55,21 @@
     line-height: 1.5;
   }
   
-  .contact-info p {
+  .contact-info {
     margin: 5px 0;
+    text-align: center;
+  }
+  .contact-info-btn{
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 2px 0px;
+    width: 27vw;
+    border-radius: 20px;
+  }
+  .contact-info-btn:hover{
+    background-color: #2a4c09;
+    color: white;
   }
   
   .social-icons {
