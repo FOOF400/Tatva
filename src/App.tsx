@@ -9,7 +9,7 @@ import ProductInfo from "./Components/product/product";
 import Testimonials from "./Components/test";
 import Vision from "./Components/vision";
 import ReviewPage from "./Components/review";
-import CatalogPage from "./Components/catalog/catalog";
+
 
 import "./index.css";
 
@@ -58,7 +58,7 @@ const App: React.FC = () => {
               }
             />
             <Route path="/review" element={<ReviewPage />} />
-            <Route path="/catalog" element={<CatalogPage />} />
+            {/* <Route path="/catalog" element={<CatalogPage />} /> */}
           </Routes>
         </div>
       </div>
