@@ -1,8 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './testimonials.css';
+import { useNavigate } from 'react-router-dom';
 
 const Testimonials: React.FC = () => {
+    const navigate = useNavigate();
     const sampleTestimonials = [
         {
           name: 'Ravi Sharma',
@@ -113,6 +115,12 @@ const Testimonials: React.FC = () => {
             </div>
           ))}
         </Slider>
+      </div>
+      <br /><br />
+      <div style={{textAlign:"center"}}>
+      <button onClick={() => navigate("/review")} className="review-btn">
+        Share your experience
+      </button>
       </div>
     </div>
   );

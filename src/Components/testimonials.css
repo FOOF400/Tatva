@@ -146,5 +146,20 @@
   color: black;
 }
 
+.review-btn{
+  width: 35vw;
+  border: 1px solid #5A6A4D;
+  padding: 0.5vw;
+  border-radius: 2vw;
+  color: #5A6A4D;
+  font-weight: 600;
+}
+.review-btn:hover{
+  background-color: #5A6A4D;
+  color: white;
+}
+
+
+
 
 
