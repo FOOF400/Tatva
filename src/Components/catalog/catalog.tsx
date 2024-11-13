@@ -6,6 +6,7 @@ import mud from "/mud.png";
 
 const Catalog = () => {
   return (
+    // triggering redeployment
     <div className="catalog-container">
       <div className="left-section">
       <img src={compost} alt="compost" className='product-image'/>
