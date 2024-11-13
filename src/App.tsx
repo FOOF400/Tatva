@@ -9,7 +9,7 @@ import ProductInfo from "./Components/product/product";
 import Testimonials from "./Components/test";
 import Vision from "./Components/vision";
 import ReviewPage from "./Components/review";
-import Catalog from "./Components/catalog/catalog";
+import Catalog from "./Components/catalog/Catalog";
 
 import "./index.css";
 

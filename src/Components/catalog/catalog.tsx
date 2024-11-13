@@ -3,10 +3,11 @@ import instagram from "/instagram-filling.png";
 import whatsapp from "/whatsapp-filling.png";
 import compost from "/compost.png";
 import mud from "/mud.png";
+import React from 'react';
 
-const Catalog = () => {
+const Catalog: React.FC = () => {
   return (
-    // triggering redeployment
+
     <div className="catalog-container">
       <div className="left-section">
       <img src={compost} alt="compost" className='product-image'/>
