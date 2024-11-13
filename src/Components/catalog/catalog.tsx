@@ -1,8 +1,6 @@
-import React from 'react';
 import '../catalog/catalog.css';
 import instagram from "/instagram-filling.png";
 import whatsapp from "/whatsapp-filling.png";
-import background from "/catalogBackground.png";
 import compost from "/compost.png";
 import mud from "/mud.png";
 
