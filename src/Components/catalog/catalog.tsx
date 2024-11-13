@@ -4,8 +4,11 @@ import whatsapp from "/whatsapp-filling.png";
 import compost from "/compost.png";
 import mud from "/mud.png";
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Catalog: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
 
     <div className="catalog-container">
@@ -24,13 +27,13 @@ const Catalog: React.FC = () => {
           At Tatva Essence, our journey began with a simple yet profound realization. Driven by a shared passion for sustainability, we discovered heaps of wasted produce in local mandis. This blatant disregard for resources ignited a spark within us, compelling us to take action.
           </p>
           <div className="contact-info">
-            <button className='contact-info-btn'>Website</button><br />
-            <button className='contact-info-btn'>Contact</button><br />
-            <button className='contact-info-btn'>Address</button>
+            <button className='contact-info-btn' onClick={() => navigate("/")}>Website</button><br />
           </div>
+          <hr className='catalog-line'/>
+          <h3>Follow us</h3>
           <div className="social-icons">
-            <img src={whatsapp} alt="WhatsApp" className="icon" />
-            <img src={instagram} alt="Instagram" className="icon" />
+            <button className="btn1" onClick={() => window.location.href = 'https://wa.me/9205047819'}><img src={whatsapp} alt="WhatsApp" className="icon wgap" /></button>
+            <button className="btn1" onClick={() => window.location.href = 'https://www.instagram.com/tatvaessence?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}><img src={instagram} alt="Instagram" className="icon" /></button>
           </div>
         </div>
       </div>

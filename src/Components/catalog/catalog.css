@@ -47,7 +47,14 @@
   
   .info-card h2 {
     font-size: 1.5em;
-    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+
+  }
+  .info-card h3{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
   }
   
   .info-card p {
@@ -71,15 +78,26 @@
     background-color: #2a4c09;
     color: white;
   }
+  .catalog-line{
+    width: 27vw;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+  }
   
   .social-icons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    margin-top: 5px;
+    justify-content:center;
   }
   
   .icon {
-    width: 40px; 
-    height: 40px;
+    width: 2vw; 
+    height: 2vw;
+  }
+  .wgap{
+    margin-right: 0.5vw;
+    width: 2.2vw; 
+    height: 2.2vw;
+
   }
   
