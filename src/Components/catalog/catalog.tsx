@@ -31,7 +31,7 @@ const Catalog: React.FC = () => {
             <button className="btn1" onClick={() => navigate("/")}><img src={internet} alt="LinkedIn" className="icon wgap" /></button>
             <button className="btn1" onClick={() => window.location.href = 'https://wa.me/9205047819'}><img src={whatsapp} alt="WhatsApp" className="icon wgap" /></button>
             <button className="btn1" onClick={() => window.location.href = 'https://www.instagram.com/tatvaessence?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}><img src={instagram} alt="Instagram" className="icon wgap" /></button>
-            <button className="btn1" onClick={() => window.location.href = 'https://wa.me/9205047819'}><img src={"/linkedin.png"} alt="LinkedIn" className="icon wgap" /></button>
+            <button className="btn1" onClick={() => window.location.href = 'https://www.linkedin.com/company/tatva-essence/posts/'}><img src={"/linkedin.png"} alt="LinkedIn" className="icon wgap" /></button>
           </div>
           <div className="community-box-catalog">
             <div className="column-box">
@@ -44,6 +44,21 @@ const Catalog: React.FC = () => {
             At Tatva Essence, we are building a passionate community dedicated to waste management, sustainability, and chemical-free gardening. Our goal is to create a healthier planet by promoting eco-friendly practices and fostering a greener lifestyle. 
             <br />If you share our passion for sustainability and want to make a meaningful impact, we invite you to be part of this journey. Together, we can exchange ideas, learn, and create solutions for a cleaner and greener future.
             </p>
+            </div>
+            
+          </div>
+
+          <div className="community-box-catalog-mob">
+            <div className="flex-mob">
+            <div className="community-box-left"></div>
+            <div className="community-box-right">
+            <h2>Our Community</h2>
+            <p>
+            At Tatva Essence, we are building a passionate community dedicated to waste management, sustainability, and chemical-free gardening. Our goal is to create a healthier planet by promoting eco-friendly practices and fostering a greener lifestyle. 
+            <br />If you share our passion for sustainability and want to make a meaningful impact, we invite you to be part of this journey. Together, we can exchange ideas, learn, and create solutions for a cleaner and greener future.
+            </p>
+            </div>
+            <button className='community-join-btn' onClick={openWhatsApp}>Be A Part Of Our Community</button>
             </div>
             
           </div>
