@@ -3,6 +3,7 @@
     height: 90vh;
     background-color: #2a472e; 
     overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   .left-section {
@@ -30,26 +31,24 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #2a4c09;
+    background-color: white;
   }
   
   .info-card {
-    background-color: #a89984; /* Light brown card color */
     border-radius: 15px;
-    padding: 20px;
-    width: 30vw;
-    text-align: justify;
-    color: white;
+    width: 45vw;
+    height: 78vh;
+    color: black;
+    text-align: center;
     letter-spacing: 0;
     word-spacing: 0;
   }
   
   .info-card h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     font-weight: 600;
-
+    margin-top: 2vh;
   }
   .info-card h3{
     font-size: 1em;
@@ -59,8 +58,73 @@
   
   .info-card p {
     margin: 10px 0;
-    line-height: 1.5;
+    line-height: 28px;
+    font-size: 1.2em;
+    font-weight: 200;
   }
+
+  .community-box-catalog{
+    height: auto;
+    border-radius: 1vw;
+    margin-top: 2.5vh;
+    padding: 1vw;
+    display: flex;
+    height: 43.5vh;
+    width: 44vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .column-box{
+    display: flex;
+    flex-direction: column;
+    height: 46.18vh;
+  }
+  .community-box-left{
+    width: 18.63vw;
+    height: 31.18vh;
+    background-image: url('/community-background.jpeg');
+    background-size: cover;
+    border-radius: 1vw;
+  }
+  .community-join-btn{
+    background-color: #D9D9D9;
+    border-radius: 2vw;
+    padding: 1vw;
+    font-weight: 600;
+    margin-top: 2vh;
+    z-index: 10;
+    box-shadow: 0px 4px 4px 0px #0000007a;
+  }
+  .community-join-btn:hover{
+    background-color: #5A6A4D;
+    color: white;
+    transform: scale(1.05);
+    transition:  0.5s;
+  }
+  .community-box-right{
+    width: 22.5vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5A6A4D;
+    margin-left: 1vw;
+    border-radius: 1vw;
+  }
+  .community-box-right p{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: justify;
+    width: 19vw;
+    line-height: 2.5vh;
+  }
+  .community-box-right h2{
+    color:#FFF0F0;
+    font-size: 2em;
+    font-weight: 600;
+  } 
+  
   
   .contact-info {
     margin: 5px 0;
@@ -79,7 +143,7 @@
     color: white;
   }
   .catalog-line{
-    width: 27vw;
+    width: 42.25vw;
     margin-top: 3vh;
     margin-bottom: 1vh;
   }
@@ -88,6 +152,12 @@
     display: flex;
     margin-top: 5px;
     justify-content:center;
+  }
+  .btn1 img {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .btn1:hover img {
+    transform: scale(1.1);
   }
   
   .icon {
@@ -98,6 +168,5 @@
     margin-right: 0.5vw;
     width: 2.2vw; 
     height: 2.2vw;
-
   }
   

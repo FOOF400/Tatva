@@ -35,7 +35,7 @@ const ReviewPage: React.FC = () => {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded"
           },
-          body: new URLSearchParams(formData as any).toString() // URL-encoded form data
+          body: new URLSearchParams(formData as any).toString() 
         }
       );
 
