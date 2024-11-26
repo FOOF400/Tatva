@@ -9,7 +9,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Catalog: React.FC = () => {
   const navigate = useNavigate();
-
+  const openWhatsApp = () => {
+    const inviteLink = 'https://chat.whatsapp.com/E1MNVRiTjbdCvs6dspn0u0'; // Your group invite link
+    window.open(inviteLink, '_blank');
+};
   return (
 
     <div className="catalog-container">
@@ -33,7 +36,7 @@ const Catalog: React.FC = () => {
           <div className="community-box-catalog">
             <div className="column-box">
             <div className="community-box-left"></div>
-            <button className='community-join-btn'>Be A Part Of Our Community</button>
+            <button className='community-join-btn' onClick={openWhatsApp}>Be A Part Of Our Community</button>
             </div>
             <div className="community-box-right">
             <h2>Our Community</h2>
